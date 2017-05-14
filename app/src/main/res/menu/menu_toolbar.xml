@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+
+            android:id="@+id/newContact"
+            android:title="@string/pedidosActivos"
+            android:icon="@drawable/ic_notifications_active"
+            app:showAsAction="ifRoom"
+
+            />
+
+
+       <item
+           android:id="@+id/option1"
+           android:title="Contactanos"
+               />
+
+      <item
+        android:id="@+id/option2"
+        android:title="Acerca de"
+        />
+
+     <item
+        android:id="@+id/option3"
+        android:title="Ayuda"
+        />
+
+</menu>
+

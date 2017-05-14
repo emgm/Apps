@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:orientation="vertical"
+    tools:context="project.apps.MainActivity">
+
+    <ScrollView
+
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+
+
+        >
+
+
+        <LinearLayout
+
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+
+            >
+
+            <include
+                android:id="@+id/myToolBar"
+                layout="@layout/toolbar" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dp"
+                android:scaleType="center"
+                android:src="@drawable/logo3"
+
+                />
+
+
+            <TextView
+
+                android:id="@+id/tvEslogan"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+
+                android:gravity="center"
+
+                android:text="@string/eslogan"
+                android:textSize="16sp"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/nombre_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+            <EditText
+
+                android:id="@+id/etNombre"
+                style="@style/styleViewForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/etNombre"
+                android:singleLine="true"
+                android:inputType="textPersonName"
+
+
+                />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/telefono_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+            <EditText
+
+                android:id="@+id/etTelefono"
+                style="@style/styleViewForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/etTelefeno"
+                android:inputType="phone"
+
+                />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/direccionRecogida_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+            <EditText
+
+                android:id="@+id/etDireccionRecogida"
+                style="@style/styleViewForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/etDireccionRecogida"
+                android:singleLine="true"
+                android:inputType="textPostalAddress"
+
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/direccionEntrega_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+            <EditText
+
+                android:id="@+id/etDireccionEntrega"
+                style="@style/styleViewForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/etDireccionEntrega"
+                android:singleLine="true"
+                android:inputType="textPostalAddress"
+
+
+                />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="7dp"
+                >
+
+                <TextView
+
+                    android:id="@+id/tvServicio"
+                    style="@style/styleViewForm"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/servicio"
+                 />
+
+                <Spinner
+
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginRight="16dp"
+
+                    android:layout_alignTop="@+id/tvServicio"
+                    android:layout_toRightOf="@+id/tvServicio"
+                    android:layout_toEndOf="@+id/tvServicio"
+
+                    />
+
+                <View
+
+                    android:id="@+id/vista"
+                    android:layout_width="match_parent"
+                    android:layout_height="31dp"
+                    android:layout_below="@id/spinner"
+
+                    />
+
+                <Button
+
+                    android:id="@+id/btnSolicitar"
+                    style="@style/styleViewForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:background="@drawable/button_corners"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/solicitarPedido"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+
+                    android:layout_below="@+id/vista"
+                    android:layout_centerHorizontal="true" />
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

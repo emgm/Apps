@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Pidelapp</string>
+    <string name="etNombre">Nombre</string>
+    <string name="etTelefeno">Telefono</string>
+    <string name="etDireccionRecogida">Lugar o direccion del pedido</string>
+    <string name="etDireccionEntrega">Dirección de entrega</string>
+    <string name="solicitarPedido">Solicitar</string>
+    <string name="eslogan">Una cuenta multiples beneficios.</string>
+    <string name="servicio">Servicio:</string>
+
+    <string name="pedidosActivos">Mis Pedidos</string>
+</resources>
